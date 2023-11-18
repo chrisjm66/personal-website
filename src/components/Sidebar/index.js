@@ -1,7 +1,7 @@
 import './index.scss';
 import { Link, NavLink } from 'react-router-dom'
-import LogoS from '../../assets/images/logo-s.png'
-import LogoSub from '../../assets/images/logo_sub.png'
+import LogoMain from '../../assets/images/logo-main-t.png'
+import LogoSub from '../../assets/images/logo-sub.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
     faHome as HomeIcon,
@@ -13,7 +13,7 @@ const logoColor = "#4d4d4e"
 const Sidebar = () => (
     <div className='nav-bar'>
         <Link className='logo' to='/'>
-            <img src={LogoS} alt='logo' />
+            <img src={LogoMain} alt='logo' />
             <img className='sub-logo' src={LogoSub} alt='me' />
         </Link>
         <nav>
@@ -31,7 +31,7 @@ const Sidebar = () => (
         <ul>
             
             <li>
-                <a href="https://linkedin.com/manganchris" rel='noreferrer'>
+                <a href="https://linkedin.com/in/manganchris" rel='noreferrer'>
                     <FontAwesomeIcon icon={ faLinkedin } color={ logoColor } />
                 </a>
             </li>

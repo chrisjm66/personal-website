@@ -3,6 +3,8 @@
     src: url( '../../assets/fonts/helvetica-neu.ttf' ) format( 'ttf' );
   }
 
+  $primary-color: #e8c547;
+
 .nav-bar {
 
     background: #181818;
@@ -15,13 +17,13 @@
 
     .logo {
         display: block;
-        padding: 8px 0;
+        padding: 10px 0;
 
         img {
             display: block;
             margin: 8px auto;
             height: auto;
-            width: 24px;
+            width: 75px;
 
             &.sub-logo {
                 width: 50px;
@@ -54,7 +56,7 @@
             }
 
             &:hover {
-                color: #ffd700;
+                color: $primary-color;
 
                 svg {
                     opacity: 0;
@@ -99,7 +101,7 @@
 
         a.active {
             svg {
-                color: #ffd700;
+                color: $primary-color;
             }
             
         }
@@ -116,6 +118,7 @@
         margin: 0;
         font-size: 100%;
         zoom: 2;
+
         li {
             a {
                 padding: 7px 0;
@@ -124,7 +127,7 @@
                 line-height: 16px;
 
                 &:hover svg {
-                    color:#ffd700;
+                    color: $primary-color;
                 }
             }
             

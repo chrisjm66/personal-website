@@ -1,6 +1,7 @@
 import './index.scss'
 
-const AnimatedLetters = ({ letterClass, stringArray, index }) => {
+const AnimatedLetters = ({ letterClass, string, index }) => {
+    var stringArray = createCharArray( string );
     return (
         <span>
             {
@@ -14,4 +15,16 @@ const AnimatedLetters = ({ letterClass, stringArray, index }) => {
     )
 }
 
-export default AnimatedLetters
+const createCharArray = ( text ) => {
+    var array = [];
+
+    for (let index = 0; index < text.length; index++) {
+        const element = text.charAt( index );
+        console.log( element, index );
+        array[ index ] = element;
+    }
+    return array;
+}
+
+
+export default AnimatedLetters;

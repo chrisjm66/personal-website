@@ -37,7 +37,7 @@ input, textarea {
 }
 
 .App-header {
-  background-color: #313b72;
+  background: linear-gradient( #313b72, $primary-color);
   min-height: 100vh;
   display: flex;
   flex-direction: column;

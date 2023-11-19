@@ -8,10 +8,25 @@
     .text-zone {
         position: absolute;
         left: 100px;
-        bottom: 100%;
+        top: 20%;
         transform: translateY(-50%);
         width: 50%;
-        max-height: 90%
+        max-height: 90%;
+        padding: 100px 0px;
+        .contact-info {
+            position: absolute;
+            padding: 100px 20px;
+            text-align: left;
+            font-family: 'Helvetica Neue';
+            font-size: 25px;
+            font-weight: 100;
+            color: white;
+            img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+
     }
 
     h1 {
@@ -42,7 +57,7 @@
         text-decoration: none;
         letter-spacing: 3px;
         animation: fadeIn 2s 1.7s backwards;
-        margin-top: 25px;
+        margin-bottom: 25px;
         margin-left: 20px;
         float: left;
 

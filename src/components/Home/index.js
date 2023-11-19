@@ -1,41 +1,40 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import './index.scss'
-import AnimatedLetters from "../AnimatedLetters";
+import AnimatedLetters from "../AnimatedLetters/index.js";
+import Logo from './Logo/index.js'
 
 const Home = () => {
     const[ letterClass, setLetterClass ] = useState('text-animate');
-    const nameArray = createCharArray( " Chris." )
-    const subTextArray = createCharArray( "Full-Stack Development, Java, and More" );
+
+    useEffect(() => {
+        const timeoutId = setTimeout(() => {
+          setLetterClass('text-animate-hover')
+        }, 4000)
+      
+        return () => {
+          clearTimeout( timeoutId )
+        }
+      }, []);
 
     return (
         <div className="container home-page">
+            <Logo />
             <div className='text-zone'>
                 <h1>Hi, 
-                    <br/> I'm
-                    <AnimatedLetters letterClass={ letterClass } stringArray={ nameArray } index={ 15 }/>
+                    <br/>
+                    <AnimatedLetters letterClass={ letterClass } string={ "I'm Chris" } index={ 15 }/>
                     <br/> I am a computer science student.
                 </h1>
                 <h2>
-                    <AnimatedLetters letterClass={ letterClass } stringArray={ subTextArray } index={20} />
+                    Full-Stack, Java, & More
                 </h2>
 
                 <Link to='/contact' className='flat-button'>Contact Me</Link>
             </div>
+            
         </div>
     )
 }
 
-function createCharArray( text ) {
-    var array = [];
-
-    for (let index = 0; index < text.length; index++) {
-        const element = text.charAt( index );
-
-        array[ index ] = element;
-        
-    }
-
-    return array;
-}
 export default Home;

@@ -5,7 +5,6 @@ const Logo = () => {
  return (
     <div className='logo-container'>
         <img src={MainLogo} alt='logo' className='main-logo'/>
-        <img src={SubLogo} alt='Chris Mangan' className='sub-logo'/>
     </div>
  )
 }

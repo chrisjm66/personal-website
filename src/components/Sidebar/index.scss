@@ -8,7 +8,7 @@
 .nav-bar {
 
     background: #0d1b2a;
-    width: 100px;
+    width: 50px;
     height: 100%;
     position: absolute;
     top: 0;
@@ -110,18 +110,22 @@
     ul {
         position: absolute;
         bottom: 20px;
-        width: 50px;
         display: block;
-        padding: 0;
+        padding: 0px 0px;
+        left: 25%;
         list-style: none;
         text-align: center;
+        align-items: center;
         margin: 0;
         font-size: 100%;
         zoom: 2;
-
         li {
+            
             a {
-                padding: 7px 0;
+                
+                
+                padding: 7px 0px;
+                align-items: center;
                 display: block;
                 font-size: 15px;
                 line-height: 16px;

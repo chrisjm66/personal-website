@@ -22,7 +22,24 @@ const About = () => {
         <div className="container home-page">
             <div className='text-zone'>
                 <h1>
-                    <AnimatedLetters letterClass={ letterClass } string={ "About Me" } index={ 15 }/>
+                    <AnimatedLetters letterClass={ letterClass } string={ "Portfolio" } index={ 15 }/>
+                </h1>
+
+                <h2>Please wait</h2>
+                
+            </div>
+
+                
+        </div>
+    )
+}
+
+/*
+return (
+        <div className="container home-page">
+            <div className='text-zone'>
+                <h1>
+                    <AnimatedLetters letterClass={ letterClass } string={ "Portfolio" } index={ 15 }/>
                 </h1>
 
                 <h2>Programming</h2>
@@ -48,7 +65,5 @@ const About = () => {
                 
         </div>
     )
-}
-
-
+*/
 export default About;

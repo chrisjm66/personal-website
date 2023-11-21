@@ -6,9 +6,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
     faHome as HomeIcon,
     faUser as UserIcon,
-    faEnvelope as EnvelopeIcon } from '@fortawesome/free-solid-svg-icons';
+    faEnvelope as EnvelopeIcon,
+    faPoo as PooIcon } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
-
 const logoColor = "#4d4d4e"
 const Sidebar = () => (
     <div className='nav-bar'>
@@ -26,20 +26,23 @@ const Sidebar = () => (
             <NavLink exact='true' activeClassName='active' className='contact-link' to='/contact'>
                 <FontAwesomeIcon icon = { EnvelopeIcon } color={ logoColor } />
             </NavLink>
+            <NavLink exact='true' activeClassName='active' className='portfolio-link' to='/portfolio'>
+                <FontAwesomeIcon icon={ PooIcon } color={logoColor} />
+            </NavLink>
         </nav>
 
         <ul>
             
             <li>
-                <a href="https://linkedin.com/in/manganchris" rel='noreferrer'>
+                <NavLink to="https://linkedin.com/in/manganchris" rel='noreferrer'>
                     <FontAwesomeIcon icon={ faLinkedin } color={ logoColor } />
-                </a>
+                </NavLink>
             </li>
 
             <li>
-                <a href="https://github.com/chrisjm66" rel='noreferrer'>
+                <NavLink to="https://github.com/chrisjm66" rel='noreferrer'>
                     <FontAwesomeIcon icon={ faGithub } color={ logoColor } />
-                </a>
+                </NavLink>
             </li>
 
         </ul>

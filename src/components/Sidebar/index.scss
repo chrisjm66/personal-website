@@ -65,7 +65,7 @@
 
             &:after {
                 content: '';
-                font-size: 9px;
+                font-size: 7px;
                 letter-spacing: 2px;
                 position: absolute;
                 bottom: 0;
@@ -92,6 +92,13 @@
         a.contact-link {
             &:after {
                 content: 'CONTACT';
+            }
+        }
+
+        a.portfolio-link {
+            &:after {
+                font-size: 6px;
+                content: 'PORTFOLIO';
             }
         }
 

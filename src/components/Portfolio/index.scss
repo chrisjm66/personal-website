@@ -39,6 +39,15 @@
         animation: fadeIn 2s 1.7s backwards;
     }
 
+    h3 {
+        font-family: sans-serif;
+        font-size: 20px;
+        text-align: left;
+        margin: auto 20px;
+        color: $primary-color;
+        animation: fadeIn 2s 1.7s backwards;
+    }
+
     .flat-button {
         color: $primary-color;
         border: 1px solid $primary-color;

@@ -25,7 +25,14 @@ const About = () => {
                     <AnimatedLetters letterClass={ letterClass } string={ "Portfolio" } index={ 15 }/>
                 </h1>
 
-                <h2>Please wait</h2>
+                <h2>My Projects</h2>
+                <div className="project-wrapper" >
+                    <div className="personal-website">
+                        <h2>Personal Website</h2>
+                        <h3><i>React.js, React Router, HTML/CSS, SASS</i></h3>
+                        <p>This website is my frist official personal project. I wanted to learn React.js so I used that, React Router, and wound up using SASS as well.</p>
+                    </div>
+                </div>
                 
             </div>
 

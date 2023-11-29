@@ -4,7 +4,7 @@
   }
 
   $primary-color: #e8c547;
- 
+  $secondary-color: #313b72;
 
 .home-page {
     overflow-y: scroll;
@@ -45,9 +45,26 @@
         text-align: left;
         margin: auto 20px;
         color: $primary-color;
-        animation: fadeIn 2s 1.7s backwards;
     }
 
+    .project-wrapper {
+        margin: 20px 20px;
+        div {
+            padding: 20px 20px;
+            background-color: $secondary-color;
+            height: 250px;
+            width: 300px;
+        }
+        h2 {
+            color: $primary-color;
+        }
+        
+        h3 {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+        }
+    }
     .flat-button {
         color: $primary-color;
         border: 1px solid $primary-color;

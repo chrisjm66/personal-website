@@ -30,8 +30,9 @@ const About = () => {
                     <div className="personal-website">
                         <h2>Personal Website</h2>
                         <h3><i>React.js, React Router, HTML/CSS, SASS</i></h3>
-                        <p>This website is my frist official personal project. I wanted to learn React.js so I used that, React Router, and wound up using SASS as well.</p>
+                        <p>This website is my first official personal project. I wanted to learn React.js so I used that, React Router, and wound up using SASS as well.</p>
                     </div>
+                    
                 </div>
                 
             </div>
@@ -41,36 +42,4 @@ const About = () => {
     )
 }
 
-/*
-return (
-        <div className="container home-page">
-            <div className='text-zone'>
-                <h1>
-                    <AnimatedLetters letterClass={ letterClass } string={ "Portfolio" } index={ 15 }/>
-                </h1>
-
-                <h2>Programming</h2>
-                <p>
-                    I started programming when I was fourteen years old, creating games in ROBLOX that I would enjoy playing using a language called Lua which has similarities to python.
-                    For a while, I did not continue learning about computer science until I took a high school programming class that used JavaScript, and I enjoyed it.
-                    I spent a lot of time programming using JavaScript, which lead me into learning HTML, CSS, Java, Python, and many more languages.
-                </p>
-                <p>
-                    Since then, I have been working on projects to better my understanding of programming and how it works, and am currently enrolled in college and am majoring in Computer Science. This website is my first college 'project,' and
-                    I also am creating this website to learn React.js, the popular web development library for user interfaces.
-                </p>
-
-                <Link to='/portfolio' className="flat-button">View My Portfolio</Link>
-                <br/>
-                <h2>Flying</h2>
-                <p>
-                    I hold a Student Pilot certifcate and have my checkride for my Private Pilot license scheduled this month (November, 2023). I have been interested in flying since I was nine years old after I saw a video of someone playing Microsoft Flight Simulator.
-                    After watching that video, I installed a flight simulator on my dad's computer. On my sixteenth birthday, I was gifted two flight lessons and have been flying ever since!
-                </p>
-            </div>
-
-                
-        </div>
-    )
-*/
 export default About;

@@ -5,6 +5,7 @@ import AnimatedLetters from "../AnimatedLetters/index.js";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import * as EmailJs from "@emailjs/browser";
 const Contact = () => {
     const[ letterClass, setLetterClass ] = useState('text-animate');
 
@@ -27,6 +28,8 @@ const Contact = () => {
                 <h2>
                     I am available for general inquires along with projects at this time.
                 </h2>
+                <br />
+                <h2>My Contact Info:</h2>
                 <div className='contact-info'>
                     <div className="email">
                         <FontAwesomeIcon className='icon' icon={faEnvelope} alt='letter' />
@@ -48,16 +51,22 @@ const Contact = () => {
     )
 }
 
-function createCharArray( text ) {
-    var array = [];
+/*
+const emailJSInit = () => {
+return (
+    <>
+        <script type="text/javascript"
+                    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+                </script>
 
-    for (let index = 0; index < text.length; index++) {
-        const element = text.charAt( index );
-        console.log( element, index );
-        array[ index ] = element;
-        
-    }
-
-    return array;
+                <script type="text/javascript">
+                (function(){
+                    EmailJs.init("VE9LS3nvlbmeFh5dn")
+                })();
+        </script>
+    </>
+    
+)
 }
+*/
 export default Contact;

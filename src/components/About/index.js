@@ -36,17 +36,18 @@ const About = () => {
                         Since then, I have been working on projects to better my understanding of programming and how it works, and am currently enrolled in college and am majoring in Computer Science. This website is my first college 'project,' and
                         I also am creating this website to learn React.js, the popular web development library for user interfaces.
                     </p>
+                    
                     <Link to='/portfolio' className="flat-button">View My Portfolio</Link>
                 </div>
                 
-
-                
-                <br/>
                 <div className="text-wrapper">
                     <h2>Flying</h2>
                     <p>
-                        I hold a Private Pilot license for single-engine airplanes. I have been interested in flying since I was nine years old after I saw a video of someone playing Microsoft Flight Simulator.
-                        After watching that video, I installed a flight simulator on my dad's computer. On my sixteenth birthday, I was gifted two flight lessons. Exactly two years and five months after my first lesson, I passed my Private Pilot checkride and have been flying ever since!
+                        I hold a Private Pilot license for single-engine airplanes, and am currently in the early stages of training for my instrument rating, which allows me to fly into clouds and improve flight safety. I have been interested in flying since I was nine years old after I saw a video of someone playing Microsoft Flight Simulator.
+                        After watching that video, I installed a flight simulator on my dad's computer.
+                    </p>
+                    <p>
+                        On my sixteenth birthday, I was gifted two flight lessons. Exactly two years and five months after my first lesson, I passed my Private Pilot checkride and have been flying ever since!
                     </p>
                     
                 

@@ -29,7 +29,7 @@ const Contact = () => {
                     I am available for general inquires along with projects at this time.
                 </h2>
                 <br />
-                <h2>My Contact Info:</h2>
+            
                 <div className='contact-info'>
                     <div className="email">
                         <FontAwesomeIcon className='icon' icon={faEnvelope} alt='letter' />

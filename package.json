@@ -20,8 +20,8 @@
     "react-router-dom": "^6.19.0",
     "react-scripts": "5.0.1",
     "sass": "^1.69.5",
-    "web-vitals": "^2.1.4",
-    "homepage": "https://chrismangan.net"
+    "serve": "^14.2.3",
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "predeploy": "npm run build",
